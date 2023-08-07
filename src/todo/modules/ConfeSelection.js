@@ -1,6 +1,10 @@
-import { Flex, Box, Heading, Container, Image, Grid, GridItem } from "@chakra-ui/react";
-import eastlogo from "../../images/east/EAST.svg"
-import westlogo from "../../images/west/WEST.svg"
+import { Box, Heading, Container, Grid, GridItem } from "@chakra-ui/react";
+import { ConfeButton } from "./ConfeButton";
+
+
+
+
+
 
 export function ConfeSelection() {
     return (
@@ -29,14 +33,10 @@ export function ConfeSelection() {
                     </Box>
                 </GridItem>
                 <GridItem>
-                    <Box w="400px">
-                        <Image src={eastlogo} />
-                    </Box>
+                    <ConfeButton indi={true}></ConfeButton>
                 </GridItem>
                 <GridItem>
-                    <Box w="400px">
-                        <Image src={westlogo} />
-                    </Box>
+                    <ConfeButton indi={false}></ConfeButton>
                 </GridItem>
             </Grid>
         </Container>
